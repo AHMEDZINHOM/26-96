@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 25em;
+  height: 10em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px; 
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0; 
+}
+
+.card {
+  width: 17em;
+  height: 22.5em;
+  background: #171717;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc; /* Added border to match previous style */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Add depth on hover */
+}
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.card .img {
+  width: 8.8em;
+  height: 8.8em;
+  background: rgb(0, 0, 0);
+  border-radius: 19px;
+  margin: auto;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.card a:hover {
+  color: red;
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+.card button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
